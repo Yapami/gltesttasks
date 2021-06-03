@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test-rs-common.dir/test-rs-common_autogen/mocs_compilation.cpp.o CMakeFiles/test-rs-common.dir/TestRng.cpp.o -o test-rs-common  ../librs-common.a -lgtest -lgtest_main -lgmock -lpthread 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc librs-race.a CMakeFiles/rs-race.dir/rs-race_autogen/mocs_compilation.cpp.o CMakeFiles/rs-race.dir/src/Competitor.cpp.o CMakeFiles/rs-race.dir/src/Race.cpp.o CMakeFiles/rs-race.dir/src/Rules.cpp.o
+/usr/bin/ranlib librs-race.a

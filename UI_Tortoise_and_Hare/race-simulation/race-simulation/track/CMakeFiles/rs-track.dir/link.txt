@@ -1,0 +1,2 @@
+/usr/bin/ar qc librs-track.a CMakeFiles/rs-track.dir/rs-track_autogen/mocs_compilation.cpp.o
+/usr/bin/ranlib librs-track.a

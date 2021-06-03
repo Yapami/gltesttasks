@@ -1,0 +1,2 @@
+/usr/bin/ar qc librs-common.a CMakeFiles/rs-common.dir/rs-common_autogen/mocs_compilation.cpp.o CMakeFiles/rs-common.dir/src/Rng.cpp.o
+/usr/bin/ranlib librs-common.a

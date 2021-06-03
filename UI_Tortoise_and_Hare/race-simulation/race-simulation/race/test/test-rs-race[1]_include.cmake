@@ -1,0 +1,5 @@
+if(EXISTS "/home/user/QT_Projects/TRY_5/race-simulation/race-simulation/race/test/test-rs-race[1]_tests.cmake")
+  include("/home/user/QT_Projects/TRY_5/race-simulation/race-simulation/race/test/test-rs-race[1]_tests.cmake")
+else()
+  add_test(test-rs-race_NOT_BUILT test-rs-race_NOT_BUILT)
+endif()

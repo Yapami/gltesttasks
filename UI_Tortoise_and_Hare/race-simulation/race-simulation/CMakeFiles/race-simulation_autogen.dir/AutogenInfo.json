@@ -1,0 +1,83 @@
+{
+	"BUILD_DIR" : "/home/user/QT_Projects/TRY_5/race-simulation/race-simulation/race-simulation_autogen",
+	"CMAKE_BINARY_DIR" : "/home/user/QT_Projects/TRY_5/race-simulation",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/user/QT_Projects/TRY_5/race-simulation/race-simulation",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/user/QT_Projects/TRY_5/race-simulation",
+	"CMAKE_EXECUTABLE" : "/usr/local/bin/cmake",
+	"CMAKE_LIST_FILES" : [ "/home/user/QT_Projects/TRY_5/race-simulation/CMakeLists.txt" ],
+	"CMAKE_SOURCE_DIR" : "/home/user/QT_Projects/TRY_5",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"/home/user/QT_Projects/TRY_5/race-simulation/RaceSimulation.h",
+			"MU",
+			"EWIEGA46WW/moc_RaceSimulation.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/user/QT_Projects/TRY_5/race-simulation/race-simulation/race-simulation_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/user/QT_Projects/TRY_5/race-simulation/race-simulation/race-simulation_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/user/QT_Projects/TRY_5/race-simulation/race-simulation",
+		"/home/user/QT_Projects/TRY_5/race-simulation",
+		"/home/user/QT_Projects/TRY_5/race-simulation/mocks",
+		"/home/user/QT_Projects/TRY_5/race-simulation/race/include",
+		"/home/user/QT_Projects/TRY_5/race-simulation/common/include",
+		"/home/user/QT_Projects/TRY_5/race-simulation/track/include",
+		"/usr/include/c++/9",
+		"/usr/include/x86_64-linux-gnu/c++/9",
+		"/usr/include/c++/9/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/9/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu",
+		"/usr/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/local/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/user/QT_Projects/TRY_5/race-simulation/race-simulation/race-simulation_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/user/QT_Projects/TRY_5/race-simulation/race-simulation/CMakeFiles/race-simulation_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 12,
+	"SETTINGS_FILE" : "/home/user/QT_Projects/TRY_5/race-simulation/race-simulation/CMakeFiles/race-simulation_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/user/QT_Projects/TRY_5/race-simulation/RaceSimulation.cpp",
+			"MU",
+			null
+		],
+		[ "/home/user/QT_Projects/TRY_5/race-simulation/main.cpp", "MU", null ]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test-rs-race.dir/test-rs-race_autogen/mocs_compilation.cpp.o CMakeFiles/test-rs-race.dir/TestCompetitor.cpp.o CMakeFiles/test-rs-race.dir/TestRace.cpp.o CMakeFiles/test-rs-race.dir/TestRules.cpp.o -o test-rs-race  ../librs-race.a -lgtest -lgtest_main -lgmock -lpthread ../../track/librs-track.a ../../common/librs-common.a -lncurses 

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/race-simulation.dir/race-simulation_autogen/mocs_compilation.cpp.o CMakeFiles/race-simulation.dir/main.cpp.o CMakeFiles/race-simulation.dir/RaceSimulation.cpp.o -o race-simulation  race/librs-race.a track/librs-track.a -lncurses common/librs-common.a 
