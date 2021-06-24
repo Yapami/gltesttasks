@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Labels.qml</file>
+        <file>Init.qml</file>
+        <file>Rects.qml</file>
+    </qresource>
+</RCC>
