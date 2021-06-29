@@ -2,6 +2,7 @@ import QtQuick 2.12
 import QtQuick.Window 2.12
 import Qt.labs.settings 1.0
 
+
 Window {
     id: mainWin
     visible: true
@@ -15,64 +16,25 @@ Window {
     Settings {
            property alias x: mainWin.x
            property alias y: mainWin.y
-       }
-
-    Init{}
-    property var yPos: 25
-    Item{
-        id: element
-        x: 350
-        y: yPos
-        Rectangle{
-            id: one
-            width: 25
-            height: 25
-            color:"red"
-            border.width: 1
-        }
-        Rectangle{
-            id: two
-            width: 25
-            height: 25
-            color:"red"
-            border.width: 1
-            anchors.left: one.right
-        }
-
-        Rectangle{
-            id: three
-            width: 25
-            height: 25
-            color:"red"
-            border.width: 1
-            anchors.right: one.left
-        }
-
-        Rectangle{
-            id: four
-            width: 25
-            height: 25
-            color:"red"
-            border.width: 1
-            anchors.top: one.bottom
-        }
-        focus: true
-        Keys.onRightPressed: {
-            if(element.x<425)
-            element.x += 25
-        }
-        Keys.onLeftPressed: {
-            if(element.x>425-250+75)
-            element.x -= 25
-        }
-        Keys.onDownPressed: {
-            mainWin.yPos += 25        }
     }
+
+    Init_Board{}
+    Element{
+        id: element
+        yPos: 25
+    }
+
     Timer{
         id: timer
         interval: 1000/2
         repeat: true
-        onTriggered: {mainWin.yPos = mainWin.yPos + 25}
+        onTriggered: {
+            if(element.yPos<25*21-50)
+                element.yPos += 25
+            else{
+                element.focus = false
+            }
+        }
         running: true
     }
 }
