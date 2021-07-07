@@ -17,20 +17,21 @@ Window {
            property alias x: mainWin.x
            property alias y: mainWin.y
     }
+    property var gridrect_size: 25
 
-    Init_Board{}
+    Initboard{}
     Element{
         id: element
-        yPos: 25
+        y_pos: gridrect_size
     }
 
     Timer{
         id: timer
-        interval: 1000/2
+        interval: 1000/2 //2 frame per second
         repeat: true
         onTriggered: {
-            if(element.yPos<25*21-50)
-                element.yPos += 25
+            if(element.y_pos<25*21-50)
+                element.y_pos += gridrect_size
             else{
                 element.focus = false
             }
