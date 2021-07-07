@@ -3,14 +3,15 @@ import QtQuick.Layouts 1.12
 
 RowLayout{
     id: loGenerar
-    property int topSpace: 250
+    property int top_space: 250
+    property int rect_size: 150
     anchors.fill: parent
-    Item {
-        Layout.fillWidth: true
-    }
 
     ColumnLayout{
-        Layout.bottomMargin: topSpace
+        id: scoar
+        Layout.bottomMargin: top_space
+        anchors.right: main_grid.left
+        anchors.margins: 40
         Text {
             Layout.alignment: Qt.AlignHCenter
             id: text_score
@@ -19,14 +20,11 @@ RowLayout{
             font.bold: true
         }
         Rectangle{
-            id: scoar
-            width: 150
+            id: scoar_rect
+            width: rect_size
             height: width
             border.width: 2
         }
-    }
-    Item {
-        Layout.fillWidth: true
     }
 
     Grid{
@@ -43,31 +41,27 @@ RowLayout{
             }
         }
     }
-    Item {
-        Layout.fillWidth: true
-    }
 
     ColumnLayout{
-        Layout.bottomMargin: topSpace
+        id: next_figure
+        Layout.bottomMargin: top_space
+        anchors.left: main_grid.right
+        anchors.margins: scoar.anchors.margins
         Text {
             id: text_next
             Layout.alignment: Qt.AlignHCenter
             text: qsTr("NEXT:")
-            font.pixelSize: 30
+            font.pixelSize: text_score.font.pixelSize
             font.bold: true
         }
         Rectangle{
-            id: next_figure
-            width: 150
+            id: next_figure_rect
+            width: rect_size
             height: width
-            border.width: 2
+            border.width: scoar_rect.border.width
         }
 
     }
-    Item {
-        Layout.fillWidth: true
-    }
-
 }
 
 
