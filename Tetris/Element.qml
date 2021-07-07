@@ -1,54 +1,58 @@
 import QtQuick 2.0
 
 Item{
-    property var number: (Math.random() * 1000000000000000000) % 3
-    property var yPos
+    property var number: Math.floor(Math.random()*3)
+    property var y_pos
+    property var rotationt_size: 90
+    property var grid_width: 250
+    property var right_side_x_pos: 425
+
     x: 350
-    y: yPos
-    Rect_of_element{
-        id: one
+    y: y_pos
+    Rectofelement{
+        id: first
         colorNumber: number
     }
 
-    Rect_of_element{
-        id: two
+    Rectofelement{
+        id: second
         colorNumber: number
-        anchors.left: one.right
+        anchors.left: first.right
     }
 
-    Rect_of_element{
-        id: three
+    Rectofelement{
+        id: third
         colorNumber: number
-        anchors.right: one.left
+        anchors.right: first.left
     }
 
-    Rect_of_element{
-        id: four
+    Rectofelement{
+        id: fourth
         colorNumber: number
-        anchors.top: one.bottom
+        anchors.top: first.bottom
     }
 
     focus: true
 
     Keys.onRightPressed: {
-        if(element.x<425)
-        element.x += 25
+        if(element.x<right_side_x_pos) //will be chenged
+            element.x += mainWin.gridrect_size
     }
     Keys.onLeftPressed: {
-        if(element.x>425-250+75)
-        element.x -= 25
+        if(element.x>right_side_x_pos-grid_width+mainWin.gridrect_size*3) //will be chenged
+            element.x -= mainWin.gridrect_size
     }
     Keys.onDownPressed: {
-        if(element.yPos<25*21-50)
-            element.yPos += 25
+        if(element.y_pos<mainWin.gridrect_size*19) //will be chenged
+            element.y_pos += mainWin.gridrect_size
         else{
             focus = false
         }
     }
     Keys.onSpacePressed: {
-        element.rotation += 90
+        element.rotation += rotationt_size
     }
     Keys.onUpPressed: {
-        element.rotation += 90
+        element.rotation += rotationt_size
     }
 }
