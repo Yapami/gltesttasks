@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Init_Board.qml</file>
+        <file>Rect_of_element.qml</file>
+        <file>Element.qml</file>
+    </qresource>
+</RCC>
